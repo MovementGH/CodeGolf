@@ -1,0 +1,1 @@
+a=eval(process.argv[2].split`][`.join`],[`),c=a[0].length,d=a.length+1,a=a.flat(),f=console.log,B=z=>(a[z]=a[z]%2*16+a[z]>>1,(a[z]^(z>=c?a[z-c]:0)>>2)%2|(a[z]>>2^a[z-1])&2?0:A(z+1)),A=z=>z<c*d?B(z)|B(z)|B(z)|B(z):process.exit(f('[['+a.map(e=>a.splice(0,c)).slice(0,d-1).join`][`+']]')),A(0),f(-1)

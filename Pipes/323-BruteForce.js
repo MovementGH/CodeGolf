@@ -1,0 +1,1 @@
+a=eval(process.argv[2].split`][`.join`],[`),x=a[0].length,y=(n,e=n%x,d=n/x|0)=>a[d]&&(a[d][e]=a[d][e]%2*16+a[d][e]>>1,z(n+1),![...a,Array(x).fill(0)].flatMap((g,h)=>[...g,0].map((i,j)=>(i^(a[h-1]?a[h-1][j]:0)>>2)%2|(i>>2^g[j-1])&2)).filter(t=>t).length),z=n=>y(n)||y(n)||y(n)||y(n),console.log(z(0)?'[['+a.join`][`+']]':-1)
