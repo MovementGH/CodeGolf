@@ -1,0 +1,1 @@
+b=process.argv,d=[],f=-1,A=y=>(x=c[y++])<51?x:x>'a'|x=='O'?A(y*2-1)|A(y*2):A(y*2-1)&A(y*2),B=(z,y=[...t=b[3]+b[4]])=>{if(z<y[a='length'])B(z+1,y);else if(A(e=0,c=y)==b[5])x=[],y.map((w,v)=>w!=t[v]?e=x.push(v):0),d.push(x),f=e<f|f<0?e:f;if(y[z]>'`')y[z]=y[z]<'b'?'o':'a',B(z+1,y)},B(0);console.log(d[a]?f?d.filter(z=>z[a]==f).join` `:'S':'I')
