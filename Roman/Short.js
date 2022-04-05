@@ -1,0 +1,1 @@
+z=process.argv[2],console.log('M1000CM900D500CD400C100XC90L50XL40X10IX9V5IV4I1'.replace(/(\D+)(\d+)/g,(_,a,b)=>a.repeat(z/b,z%=b)))
